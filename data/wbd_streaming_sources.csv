@@ -1,0 +1,9 @@
+year,quarter,source_url,notes
+2024,1,https://www.sec.gov/Archives/edgar/data/1437107/000143710725000093/a2025-05x08earningspress.htm,2024 comparative reported in 2025 Q1 release
+2024,2,https://www.sec.gov/Archives/edgar/data/1437107/000143710725000189/wbd2q25earningsrelease08.htm,2024 comparative reported in 2025 Q2 release
+2024,3,https://www.sec.gov/Archives/edgar/data/1437107/000143710725000213/a991wbd3q25earningsrelea.htm,2024 comparative reported in 2025 Q3 release
+2024,4,https://www.sec.gov/Archives/edgar/data/1437107/000143710726000011/wbd4q25earningsrelease02.htm,2024 comparative reported in 2025 Q4 release
+2025,1,https://www.sec.gov/Archives/edgar/data/1437107/000143710725000093/a2025-05x08earningspress.htm,2025 Q1 earnings release
+2025,2,https://www.sec.gov/Archives/edgar/data/1437107/000143710725000189/wbd2q25earningsrelease08.htm,2025 Q2 earnings release
+2025,3,https://www.sec.gov/Archives/edgar/data/1437107/000143710725000213/a991wbd3q25earningsrelea.htm,2025 Q3 earnings release
+2025,4,https://www.sec.gov/Archives/edgar/data/1437107/000143710726000011/wbd4q25earningsrelease02.htm,2025 Q4 earnings release
