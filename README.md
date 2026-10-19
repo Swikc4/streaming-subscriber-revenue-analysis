@@ -27,7 +27,6 @@
     <li><a href="#usage">Usage</a></li>
     <li><a href="#dataset">Dataset</a></li>
     <li><a href="#what-i-learned">What I Learned</a></li>
-    <li><a href="#contact">Contact</a></li>
     <li><a href="#acknowledgments">Acknowledgments</a></li>
   </ol>
 </details>
@@ -146,17 +145,6 @@ I also learned that an increase in one metric doesn't always mean another metric
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-## Contact
-
-Swikriti KC - [LinkedIn](https://www.linkedin.com/in/swikriti-kc/)
-
-Project Link: [https://github.com/Swikc4/streaming-subscriber-revenue-analysis](https://github.com/Swikc4/streaming-subscriber-revenue-analysis)
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 ## Acknowledgments
 
 * Warner Bros. Discovery investor relations and SEC filings
-* [Best-README-Template](https://github.com/othneildrew/Best-README-Template)
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
