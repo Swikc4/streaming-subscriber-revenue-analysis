@@ -2,7 +2,7 @@
 
 <br />
 <div align="center">
-  <h3 align="center">Warner Bros. Discovery Streaming Revenue &amp; Subscriber Analysis (2024-2025)</h3>
+  <h3 align="center">Warner Bros. Discovery Streaming Revenue &amp; Subscriber Analysis (2024 to 2025)</h3>
   <p align="center">
     SQL analysis of whether gaining more streaming subscribers also meant earning more revenue, using eight quarters of public earnings data
     <br />
@@ -118,10 +118,10 @@ Q3 was the exception, with revenue remaining almost unchanged compared with Q3 2
 
 Project files:
 
-- `data/` - dataset and source references
-- `sql/` - SQL queries used in the analysis
-- `results/` - graphs showing the findings
-- `docs/` - additional information about the data
+- `data/`: dataset and source references
+- `sql/`: SQL queries used in the analysis
+- `results/`: graphs showing the findings
+- `docs/`: additional information about the data
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
