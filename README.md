@@ -1,6 +1,38 @@
-# Warner Bros. Discovery Streaming Revenue & Subscriber Analysis (2024–2025)
+<a id="readme-top"></a>
 
-## About This Project
+<br />
+<div align="center">
+  <h3 align="center">Warner Bros. Discovery Streaming Revenue &amp; Subscriber Analysis (2024-2025)</h3>
+  <p align="center">
+    SQL analysis of whether gaining more streaming subscribers also meant earning more revenue, using eight quarters of public earnings data
+    <br />
+    <a href="https://github.com/Swikc4/streaming-subscriber-revenue-analysis"><strong>Explore the repo »</strong></a>
+  </p>
+</div>
+
+<details>
+  <summary>Table of Contents</summary>
+  <ol>
+    <li><a href="#about-the-project">About The Project</a>
+      <ul><li><a href="#built-with">Built With</a></li></ul>
+    </li>
+    <li><a href="#what-i-analyzed">What I Analyzed</a></li>
+    <li><a href="#what-i-found">What I Found</a></li>
+    <li><a href="#getting-started">Getting Started</a>
+      <ul>
+        <li><a href="#prerequisites">Prerequisites</a></li>
+        <li><a href="#installation">Installation</a></li>
+      </ul>
+    </li>
+    <li><a href="#usage">Usage</a></li>
+    <li><a href="#dataset">Dataset</a></li>
+    <li><a href="#what-i-learned">What I Learned</a></li>
+    <li><a href="#contact">Contact</a></li>
+    <li><a href="#acknowledgments">Acknowledgments</a></li>
+  </ol>
+</details>
+
+## About The Project
 
 For this project, I used SQL to analyze Warner Bros. Discovery's streaming revenue and subscriber growth between 2024 and 2025.
 
@@ -8,11 +40,15 @@ I wanted to understand how the company's streaming business performed over time,
 
 I worked with quarterly financial data and used PostgreSQL to calculate revenue changes, subscriber growth, and year-over-year performance.
 
-## Tools Used
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-- **PostgreSQL 18** — Writing SQL queries and analyzing data
-- **pgAdmin 4** — Importing data, running queries, and creating initial graphs
-- **GitHub** — Organizing and sharing the project
+### Built With
+
+* ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white)
+* ![SQL](https://img.shields.io/badge/SQL-4479A1?style=for-the-badge)
+* ![pgAdmin 4](https://img.shields.io/badge/pgAdmin%204-336791?style=for-the-badge)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## What I Analyzed
 
@@ -24,6 +60,8 @@ I focused on four main questions:
 4. How much quarterly revenue was generated relative to the number of subscribers?
 
 To answer these questions, I used SQL functions and concepts including `SELECT`, `GROUP BY`, `CASE WHEN`, `LAG()`, `ROUND()`, CTEs, and percentage calculations.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## What I Found
 
@@ -55,23 +93,48 @@ Q3 was the exception, with revenue remaining almost unchanged compared with Q3 2
 
 ![Quarterly Revenue Comparison](results/10_quarterly_revenue_comparison.png)
 
-## How I Used SQL
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-I started by importing the dataset into PostgreSQL and checking the data.
+## Getting Started
 
-Then I wrote queries to calculate quarterly changes, compare current and previous periods, and examine how revenue and subscriber growth related to each other.
+### Prerequisites
 
-I used `LAG()` to compare values between quarters, `CASE WHEN` to compare 2024 and 2025, and CTEs to make longer queries easier to read.
+* PostgreSQL 18 and pgAdmin 4
 
-I saved the SQL scripts in the `sql` folder and the graphs in the `results` folder.
+### Installation
+
+1. Clone the repo
+   ```sh
+   git clone https://github.com/Swikc4/streaming-subscriber-revenue-analysis.git
+   ```
+2. Create a database named `streaming_analysis` in PostgreSQL.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## Usage
+
+1. Run `sql/01_create_tables.sql` to create the table.
+2. Import `data/wbd_streaming_2024_2025.csv` into the table using pgAdmin. Make sure the CSV header is enabled and leave out the automatically generated `id` column.
+3. Run the SQL files in the `sql` folder to reproduce the analysis. If the data has already been imported, there's no need to import it again.
+
+Project files:
+
+- `data/` - dataset and source references
+- `sql/` - SQL queries used in the analysis
+- `results/` - graphs showing the findings
+- `docs/` - additional information about the data
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## Dataset
 
-The project uses eight quarters of Warner Bros. Discovery streaming financial data from 2024 and 2025, collected from publicly available earnings information and SEC filings.
+The project uses eight quarters of Warner Bros. Discovery streaming financial data from 2024 and 2025, collected from publicly available earnings information and SEC filings. `data/wbd_streaming_sources.csv` lists the SEC filing used for each quarter.
 
 The dataset contains the reporting year, quarter, streaming revenue, and subscriber count.
 
 The figures and reporting definitions still need a final check against the original reports. Since this is quarterly company-level data, the analysis focuses on business performance rather than individual customer behavior or churn.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## What I Learned
 
@@ -81,22 +144,19 @@ Before this project, I was mainly practicing SQL commands individually. Here, I 
 
 I also learned that an increase in one metric doesn't always mean another metric will increase. Looking at revenue and subscribers together gave me a better understanding of the company's performance.
 
-## Project Files
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-- `data/` — Dataset and source references
-- `sql/` — SQL queries used in the analysis
-- `results/` — Graphs showing the findings
-- `docs/` — Additional information about the data
+## Contact
 
-## How to Run This Project
+Swikriti KC - [LinkedIn](https://www.linkedin.com/in/swikriti-kc/)
 
-This project was created using PostgreSQL 18 and pgAdmin 4.
+Project Link: [https://github.com/Swikc4/streaming-subscriber-revenue-analysis](https://github.com/Swikc4/streaming-subscriber-revenue-analysis)
 
-To run the analysis:
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-1. Create a database named `streaming_analysis` in PostgreSQL.
-2. Run `01_create_tables.sql` to create the table.
-3. Import `wbd_streaming_2024_2025.csv` into the table using pgAdmin. Make sure the CSV header is enabled and leave out the automatically generated `id` column.
-4. Run the SQL files in the `sql` folder to reproduce the analysis.
+## Acknowledgments
 
-If the data has already been imported, there's no need to import it again.
+* Warner Bros. Discovery investor relations and SEC filings
+* [Best-README-Template](https://github.com/othneildrew/Best-README-Template)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
